@@ -1,0 +1,10 @@
+Create repo with git init -
+Create node npm init -
+install color package through npm - 
+Creat function that accepts three agrs -
+Two args must be numbers -
+Check the string for operators - 
+Check there is only one operator and throw error if two are entered -
+Create if funtions to display specific -
+Print outcome to terminal - 
+
