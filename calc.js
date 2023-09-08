@@ -1,15 +1,20 @@
 var colors = require('ansi-colors');
-var prompt = require('prompt-sync');
-//     history: require('prompt-sync-history')(),
-//     autocomplete: complete(['hello1234', 'he', 'hello', 'hello12', 'hello123456']),
-//     sigint: false
-//   });
+var prompt = require('prompt-sync')();
 
-  console.log(require('prompt-sync')()('tell me something about yourself: '))
 
-function calc (a, b, c)   {
+
+function  calc (num1, num2, op) {
+
+    if (op === "+" || op === "-" || op ===  "/" || op === "*") {
+      return  eval (num1 + op + num2)
+    } else {
+        return;
+    }
 }
 
-var value = 'justin';
-var name = prompt('enter name: ', value);
 
+var num1 = prompt("Enter first number: ")
+var num2 = prompt("Enter second number: ")
+var op = prompt("Enter operator: ")
+
+console.log(calc(num1,num2,op));
